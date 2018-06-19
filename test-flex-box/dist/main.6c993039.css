@@ -1,0 +1,63 @@
+#root {
+  margin: 75px auto;
+  width: 300px;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: row;
+  overflow: hidden;
+  /* transform: rotate(45deg); */
+}
+
+#item1{
+  width: 50px;
+  height: 100px;
+  background: red;
+}
+
+#item2{
+  flex: 1;
+  height: 100px;
+  background: green;
+}
+
+/* .item {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 0 100px 0 100px;
+  margin-top: 10px;
+}
+
+#item2{
+  align-self: center;
+}
+#item3 {
+  align-self: flex-end;
+} */
+
+
+
+
+.main {
+  display: flex;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+/*
+  flex-grow 设置为1 是先按照 盒子里面内容撑宽宽度得到内容宽度1，
+  在由flex特性计算缩放宽度得到宽度2，
+  比较宽度1和2按照最大的那个确定盒子宽度，如果把宽度设置一个固定值，
+  就可以达到只按照flex缩放的计算规则来最终确定宽度
+*/
+.content {
+  flex: 1;
+  width: 0;
+}
+.content > * {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

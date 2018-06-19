@@ -1,3 +1,5 @@
 /node_modules
 /*/*.wasm
 package-lock.json
+.DS_Store
+/*/node_modules

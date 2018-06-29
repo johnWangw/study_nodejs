@@ -8,6 +8,17 @@ const Titles = styled.h1.withConfig({
 })(['font-size:1.5em;text-align:center;color:palevioletred;']);
 console.dir(styled)
 // var index=1
+
+
+const C= styled.div`
+  font-size: 8px;
+  background: url(${()=>'/12.png'});
+`;
+
+const D= styled(C)`
+  font-size: 1rem;
+`;
+
 class Index extends React.Component{
   render(){
     return (
@@ -15,7 +26,9 @@ class Index extends React.Component{
         color: `red`
       }} onClick={()=>{
         alert('asdas')
-      }}>hello world </Titles>
+      }}>
+        <D>asd</D>
+      </Titles>
     );
   }
 }

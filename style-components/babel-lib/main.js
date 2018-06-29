@@ -29,6 +29,19 @@ var Titles = _styledComponents2.default.h1.withConfig({
 console.dir(_styledComponents2.default);
 // var index=1
 
+
+var C = _styledComponents2.default.div.withConfig({
+  displayName: 'main__C',
+  componentId: 'hxq85t-0'
+})(['font-size:8px;background:url(', ');'], function () {
+  return '/12.png';
+});
+
+var D = (0, _styledComponents2.default)(C).withConfig({
+  displayName: 'main__D',
+  componentId: 'hxq85t-1'
+})(['font-size:1rem;']);
+
 var Index = function (_React$Component) {
   _inherits(Index, _React$Component);
 
@@ -48,7 +61,11 @@ var Index = function (_React$Component) {
           }, onClick: function onClick() {
             alert('asdas');
           } },
-        'hello world '
+        React.createElement(
+          D,
+          null,
+          'asd'
+        )
       );
     }
   }]);
